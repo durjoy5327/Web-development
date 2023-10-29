@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form </title>
+    </head>
+    <body style="background-color: beige;">
+        <h1 style="text-align: center;color:blue "> <marquee> Sign Up Form </marquee> </h1>
+        <hr><br>
+        <label for="name" >Name : </label>
+        <input type="text" id="name" name="name" placeholder="Full Name">
+        <br><br>
+        <label for="mail">E-mail : </label>
+        <input type="text" id="mail" placeholder="User mail" required><br><br>
+        <label for="pass">Password : </label>
+        <input type="password" id="pass" placeholder="User password"><br><br>
+        <label for="phone">Phone : </label>
+        <select>
+            <option value="+880">+880</option>
+            <option value="+932">+932</option>
+            <option value="+465">+465</option>
+        </select>
+        <input type="number" id="phone"><br><br>
+        <label for="desh">Country : </label>
+        <input list="desh">
+        <datalist id="desh">
+            <option>Bangladesh</option>
+            <option>India</option>
+            <option>Indoneshia</option>
+            <option>Canda</option>
+            <option>Japan</option>
+            <option>Australia</option>
+        </datalist>
+        <br><br>
+        <label for="gen">Gender</label>
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+        <input type="radio" name="gen">Others<br><br>
+        <label for="date">Date of Birth : </label>
+        <input type="date" id="date"><br><br>
+        <label for="time"> Time : </label>
+        <input type="time" id="time"><br><br>
+        <label for="color"> Color : </label>
+        <input type="color" id="color">
+        <br><br>
+        <label for="pic">Your Photo</label>
+        <input type="file" id="pic"><br><br>
+        <input type="checkbox">I have Bike.
+        <input type="checkbox">I have Bycycle.<br><br>
+        <textarea rows="20" cols="40" placeholder="Comment here">
+        </textarea><br>
+        <input type="submit" value="send">
+        <input type="reset">
+    </body>
+</html>
