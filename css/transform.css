@@ -1,0 +1,47 @@
+.div1{
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin: 100px auto;
+    background-color: chartreuse;
+    position: relative;
+    transform:rotate(10deg);
+    transform: scale(0.8);
+
+    transition-timing-function:ease-out;
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 40%;
+
+}
+
+.link{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(211, 69, 171);
+    margin:100px auto;
+    /*
+    transition-property:all;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    transition-timing-function:cubic-bezier(.41,.91,.65,.45);
+    */
+    transition: all 1s 0.5s linear;
+    position: relative;
+}
+.link:hover{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:rgb(26, 64, 139) ;
+    transform: rotate(360deg);
+}
+h4{
+    text-align: center;
+    position: relative;
+    top:50%
+}
