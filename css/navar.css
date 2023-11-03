@@ -1,0 +1,89 @@
+/*Header part */
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    color: aliceblue;
+    top: 0;
+}
+header{
+    width: 1600px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 70px;
+    padding: 10px;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1 ul{
+    list-style: none;
+}
+.div1 ul li{
+    background-color: black;
+    width: 170px;
+    border: 1px solid white; 
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+.div1 a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.div1 ul li:hover{
+    background-color: crimson;
+    transition: all ease-in 0.5s;
+}
+.div1 ul ul{
+    display: none;
+}
+.div1 ul li:hover ul{
+    display:grid;
+}
+/*Header part */
+
+/*Footer part*/
+
+footer{
+    width: 1600px;
+    height: 250px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+}
+.divfoot p{
+    margin-left: 200px;
+    margin-right: 240px;
+    text-align: center;
+}
+.icon {
+    font-size: 30px;
+    text-align:center;
+}
+.icon a{
+    color: white;
+    margin: 10px center;
+    
+}
+.copy{
+    text-align: center;
+}
