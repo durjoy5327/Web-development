@@ -26,7 +26,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff,#45f3ff,#45f3ff);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
