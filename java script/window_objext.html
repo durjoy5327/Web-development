@@ -1,0 +1,37 @@
+<html>
+  <head>
+     </head>
+  <body>
+    <button onclick="objalert()">Click</button><br> <br>
+    <button onclick="objconfirm()">Click</button><br> <br>
+    <button onclick="objprompt()">Click</button><br><br>
+    <button onclick="objopen()">Click</button><br><br>
+    <button onclick="objclose()">Click</button>
+   
+    <script>
+      function objalert() {
+        alert("Save successfully");
+      }
+      function objconfirm(){
+        document.write(
+            confirm()
+        )
+      }
+      function objprompt(){
+        document.write(
+            prompt("Write your name")
+        )
+      }
+      function objopen(){
+        open()
+      }
+      
+      setTimeout(function()
+      {
+        alert("dissapearing")
+        close()
+      },10000
+      )
+    </script>
+  </body>
+</html>
