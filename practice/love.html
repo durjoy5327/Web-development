@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="love.jpg" alt="love" />
+      <h2 class="question">Do you love me? &#128578;</h2>
+      <div class="btn-group">
+        <button class="yes-btn">Yes</button>
+        <button class="no-btn">No</button>
+      </div>
+    </div>
+    <script>
+      const wrapper = document.querySelector(".wrapper");
+      const question = document.querySelector(".question");
+      const yesBtn = document.querySelector(".yes-btn");
+      const noBtn = document.querySelector(".no-btn");
+      const wrapperRect = wrapper.getBoundingClientRect();
+      const noBtnRect = noBtn.getBoundingClientRect();
+      yesBtn.addEventListener("click", () => {
+        question.innerHTML = "Keep loving but I'm engaged with other &#128521;";
+        noBtn.style.display = "none";
+      });
+      noBtn.addEventListener("mouseover", () => {
+        const wrapperRect = wrapper.getBoundingClientRect();
+        const noBtnRect = noBtn.getBoundingClientRect();
+
+        const maxWidth = wrapperRect.width - noBtnRect.width;
+        const maxHeight = wrapperRect.height - noBtnRect.height;
+
+        const i = Math.floor(Math.random() * maxWidth);
+        const j = Math.floor(Math.random() * maxHeight);
+        noBtn.style.left = i + "px";
+        noBtn.style.top = j + "px";
+      });
+    </script>
+
+    <style>
+   
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #382a35; 
+        animation: backgroundAnimation 1s ease infinite;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-color: #f16a5b; 
+        }
+        25% {
+          background-color: #f1c642; 
+        }
+        50% {
+          background-color: #de3aba; 
+        }
+        65% {
+          background-color: #36e6ab; 
+        }
+        90% {
+          background-color: #cb3579; 
+        }
+        100% {
+          background-color: #e40f0f;
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", "sans-serif";
+      }
+
+      *::selection {
+        background: #0ef;
+        color: #fff;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #382a35;
+      }
+
+      .wrapper {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        background: #ffffff;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .responsive-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      h2 {
+        font-size: 3em;
+        color: #282a35;
+        margin: 15px 0;
+      }
+      .btn-group {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+      }
+
+      button {
+        position: absolute;
+        width: 170px;
+        height: inherit;
+        font-size: 1.2em;
+        color: #606060;
+        font-weight: 600;
+        border-radius: 30px;
+        border: 2px solid rgb(32, 223, 22);
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      button:hover {
+        transition-delay: 0s, 0.5s;
+        color: #606060;
+        box-shadow: 0 0 10px rgb(10, 41, 216), 0 0 20px rgb(7, 35, 197), 0 0 40px #0ef, 0 0 80px #0ef,
+          0 0 160px #0ef;
+      }
+      button:nth-child(1) {
+        margin-left: -200px;
+        background: #f1f1f1;
+      }
+      button:nth-child(2) {
+        margin-right: -200px;
+        color: #282a35;
+      }
+    </style>
+  </body>
+</html>
